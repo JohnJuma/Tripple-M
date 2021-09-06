@@ -1,0 +1,40 @@
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <script type="text/javascript" src='./javascript/client.js'></script>
+</head>
+<body>
+  <form action="/sign-up" method="POST">
+  <div class="container">
+    
+    <h1>Sign Up</h1>
+    <p class='form1'>Please fill in this form to create an account.</p>
+    <hr>
+
+    <label for="email" class='form1' data-error='the email you is taken'><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email">
+
+    <label for="password" class='form1'><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password">
+
+    <label for="confirmPassword" class='form1'><b>Confirm Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="confirmPassword">
+
+    <label>
+      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+    </label>
+
+    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+    <div class="clearfix">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <button type="submit" class="signupbtn">Sign Up</button>
+    </div>
+  </div>
+  </form>
+  <p class='account-link'>Have an account? <a href='./sign-in.html'>Log in </a></p>
+
+
+</body>
+</html>
